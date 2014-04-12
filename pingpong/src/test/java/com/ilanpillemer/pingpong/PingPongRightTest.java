@@ -14,13 +14,11 @@ import static org.hamcrest.Matchers.*;
 public class PingPongRightTest {
     
     private final ByteArrayOutputStream out = new ByteArrayOutputStream();
-    private final ByteArrayOutputStream err = new ByteArrayOutputStream();
     private StringBuilder sb = new StringBuilder();
 
     @Before
     public void setUp() {
 	System.setOut(new PrintStream(out));
-
     }
 
     @After
