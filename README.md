@@ -1,7 +1,8 @@
 ping-pong-1
 ===========
 
-maven poject with a test case preview ping pong assignment.
+This is maven poject for the preview assignment for https://class.coursera.org/posa-002/
+It contains a test case for testing the assignment has been done correctly.
 
 
 
