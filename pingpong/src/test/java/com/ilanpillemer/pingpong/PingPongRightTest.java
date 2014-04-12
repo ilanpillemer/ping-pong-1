@@ -31,7 +31,7 @@ public class PingPongRightTest {
 	PingPongRight.main(null);
 	System.err.println(out.toString());
 	System.err.println(expected());
-	assertThat (out.toString(),is (expected()));
+	assertThat (out.toString(),is(expected()));
     }
 
     private String expected() {
