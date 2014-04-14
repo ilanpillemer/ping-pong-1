@@ -29,9 +29,11 @@ public class PingPongRightTest {
     @Test
     public void PingPongRight_produces_expected_stdout() throws Exception {
 	PingPongRight.main(null);
+	String expected = expected()
+
 	System.err.println(out.toString());
-	System.err.println(expected());
-	assertThat (out.toString(),is(expected()));
+	System.err.println(expected);
+	assertThat (out.toString(),is(expected));
     }
 
     private String expected() {
