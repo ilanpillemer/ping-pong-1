@@ -1,7 +1,6 @@
 package com.ilanpillemer.pingpong;
-
 // Import the necessary Java synchronization and scheduling classes.
-import java.util.concurrent.Semaphore;
+
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.concurrent.locks.Condition;
@@ -11,7 +10,6 @@ import java.util.concurrent.locks.Condition;
  *
  * @brief This class implements a Java program that creates two
  *        instances of the PlayPingPongThread and start these thread
-
  *        instances to correctly alternate printing "Ping" and "Pong",
  *        respectively, on the console display.
  */
@@ -29,7 +27,7 @@ public class PingPongRight
         /**
          * Constructor initialize the data members. 
          */
-        public SimpleSemaphore (int maxPermits)
+        public SimpleSemaphore (int permits)
         { 
             // TODO - You fill in here.
         }
@@ -51,18 +49,18 @@ public class PingPongRight
         }
 
         /**
-         * Use a ReentrantLock to protect the critical section.
+         * Define a ReentrantLock to protect the critical section.
          */
         // TODO - You fill in here.
 
         /**
-         * Use a ConditionObject to wait while the number of permits
+         * Define a ConditionObject to wait while the number of permits
          * is 0.
          */
         // TODO - You fill in here.
 
         /**
-         * A count of the number of available permits.
+         * Define a count of the number of available permits.
          */
         // TODO - You fill in here.
     }
